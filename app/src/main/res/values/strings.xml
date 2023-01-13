@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AppSophosBedoyaAndrea</string>
+    
+    <string name="HintEmail">Email</string>
+    <string name="HintPassword">Password</string>
+    <string name="textIngresarDatos">Ingresa tus datos para   acceder</string>
+    <string name="ButtonIngresar">Ingresar</string>
+    <string name="ButtonIngresarConHuella">Ingresar con huella</string>
+    
+    <string name="textSendDocuments">Enviar documentos</string>
+    <string name="buttonIntoPink">Ingresar</string>
+    <string name="texViewDocuments">Ver documentos</string>
+    <string name="buttonIntoBlue">Ingresar</string>
+    <string name="textOficces">Oficinas</string>
+    <string name="buttonIntoGreen">Ingresar</string>
+    <string name="textWelcome">Bienvenido</string>
+    <string name="textTheseAreOptionsForYou">Estas son las opciones   que tenemos para ti</string>
+    
+    <string name="buttonBack">Regresar</string>
+    <string name="textSendDocuments2">Envío de documentación</string>
+    <string name="HintTextNumber">Número de documento</string>
+    <string name="HintTextName">Nombre</string>
+    <string name="HintTextApellidos">Apellidos</string>
+    <string name="HintTextCorreo">Correo</string>
+    <string name="HintTextTipoAdjunto">Tipo de adjunto</string>
+    <string name="buttonDocument">Documento</string>
+    <string name="buttonSend">Enviar</string>
+
+    <string name="textDocumentos">Documentos</string>
+
+    <string name="popup_takephoto_button">Tomar foto</string>
+    <string name="popup_window_title">Seleccione: </string>
+    <string name="popup_imagengalery_button">Cargar foto</string>
+
+    <string name="button5">Enviar documentos</string>
+    <string name="button6">Ver documentos</string>
+    <string name="button7">Oficinas</string>
+    <string name="button8">Modo nocturno</string>
+    <string name="button8_2">Modo dia</string>
+    <string name="button9">Idioma inglés</string>
+    <string name="button9_2">Idioma español</string>
+
+
+
+</resources>

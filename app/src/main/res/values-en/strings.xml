@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppSophosBedoyaAndrea</string>
+    <string name="textIngresarDatos">Enter your data   to access</string>
+    <string name="ButtonIngresar">Get into</string>
+    <string name="ButtonIngresarConHuella">Into with fingerprint</string>
+    <string name="textSendDocuments">Sending documentation</string>
+    <string name="buttonIntoPink">Get into</string>
+    <string name="texViewDocuments">See documents</string>
+    <string name="buttonIntoBlue">Get into</string>
+    <string name="textOficces">Offices</string>
+    <string name="buttonIntoGreen">Get into</string>
+    <string name="textWelcome">Welcome</string>
+    <string name="textTheseAreOptionsForYou">These are the options that   we have for you</string>
+    <string name="buttonBack">Back</string>
+    <string name="HintTextNumber">Document number</string>
+    <string name="HintTextName">Name</string>
+    <string name="HintTextApellidos">Last name</string>
+    <string name="HintTextCorreo">Email</string>
+    <string name="HintTextTipoAdjunto">Attachment Type</string>
+    <string name="buttonDocument">Document</string>
+    <string name="buttonSend">Send</string>
+    <string name="textDocumentos">Documents</string>
+    <string name="popup_takephoto_button">Take photo</string>
+    <string name="popup_window_title">Select:</string>
+    <string name="popup_imagengalery_button">upload photo</string>
+    <string name="button5">Send documents</string>
+    <string name="button6">See documents</string>
+    <string name="button7">Offices</string>
+    <string name="button8">Night mode</string>
+    <string name="button8_2">Day mode</string>
+    <string name="button9">Spanish language</string>
+    <string name="button9_2">English language</string>
+    <string name="HintEmail" translatable="false">Email</string>
+    <string name="HintPassword">Password</string>
+    <string name="textSendDocuments2">Sending documentation</string>
+</resources>

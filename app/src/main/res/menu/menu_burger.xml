@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nv_enviar_documentos"
+        android:title="Enviar documento"/>
+    <item android:id="@+id/nv_ver_documentos"
+        android:title="Ver documento"/>
+    <item android:id="@+id/nv_oficinas"
+        android:title="Oficinas"/>
+    <item android:id="@+id/nv_modo"
+        android:title="Modo oscuro"/>
+    <item android:id="@+id/nv_idioma"
+        android:title="Idioma ingles"/>
+</menu>

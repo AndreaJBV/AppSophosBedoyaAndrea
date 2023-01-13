@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sophos_pink">#FE1191</color>
+    <color name="sophos_pink80">#CCFE1191</color>
+    <color name="sophos_blue">#4500FF</color>
+    <color name="sophos_green">#05667C</color>
+    <color name="sophos_purple">#7800FD</color>
+    <color name="sophos_cyan">#06D5EF</color>
+    <color name="sophos_blueDark">#41207E</color>
+    <color name="sophos_transparent">@android:color/transparent</color>
+    <color name="lighter_gray_no_transparent">#FFDDDDDD</color>
+</resources>

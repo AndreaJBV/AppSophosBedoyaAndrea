@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/allViewDocuments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.ViewDocuments2Activity">
+
+        <LinearLayout
+            android:id="@+id/LayouNameMenu"
+            android:background="@android:color/transparent"
+            android:layout_width="410dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:id="@+id/LayouRegresar"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="13dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:onClick="onClick"
+                    android:id="@+id/buttonRegresar"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/efect_bton_menu2"
+                    android:drawableLeft="@drawable/keyboard_backspace"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:lineHeight="21dp"
+                    android:text="@string/buttonBack"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#7800FD"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayouHamburgerMenu"
+                android:background="@android:color/transparent"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:onClick="onClick"
+                    android:id="@+id/imageBurgerMenu"
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="3.74dp"
+                    android:layout_marginRight="3.74dp"
+                    android:background="@drawable/efect_bton_menu2"
+                    app:srcCompat="@drawable/hamburger_menu" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:background="@android:color/transparent"
+            android:layout_width="354dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayouNameMenu"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textDocumentos"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="700"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/textDocumentos"
+                android:textAlignment="center"
+                android:textColor="#262626"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="398dp"
+            android:layout_height="197dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/LayouNameMenu"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints"
+            tools:listitem="@layout/recycler_documents" />
+
+        <TextView
+            android:id="@+id/textViewResponse"
+            android:layout_width="412dp"
+            android:layout_height="353dp"
+            android:layout_marginTop="180dp"
+            android:hint="Documents"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/LayouNameMenu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

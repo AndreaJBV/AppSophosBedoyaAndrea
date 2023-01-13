@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_window_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/popup_window_view_with_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/sophos_pink80"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/popup_window_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popup_window_background_container"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/sophos_pink"
+                android:minHeight="170dp">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/popup_window_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/sophos_pink"
+                    android:gravity="center"
+                    android:text="@string/popup_window_title"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeMaxTextSize="24dp"
+                    app:autoSizeTextType="uniform"
+                    app:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="234dp"
+                    android:layout_height="51dp"
+                    android:background="@drawable/btn_ingresar_pink"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/popup_window_title"
+                    tools:ignore="MissingConstraints">
+
+                    <Button
+                        android:id="@+id/popup_takephoto_button"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="234dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/efect_bton_menu2"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/popup_takephoto_button"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sophos_pink"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="234dp"
+                    android:layout_height="51dp"
+                    android:background="@drawable/btn_ingresar_pink"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+                    tools:ignore="MissingConstraints">
+
+                    <Button
+                        android:id="@+id/popup_imagengalery_button"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="234dp"
+                        android:layout_height="51dp"
+                        android:background="@drawable/efect_bton_menu2"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/popup_imagengalery_button"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sophos_pink"
+                        android:onClick="pickedPhoto"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

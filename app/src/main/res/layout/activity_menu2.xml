@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/all_Menu2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.Menu2Activity">
+
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/LayouNameMenu"
+            android:layout_width="410dp"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/LayoutNameMenu2"
+                android:background="@android:color/transparent"
+                android:layout_width="100dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="211dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textNameMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="700"
+                    android:editable="true"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:hint="Name"
+                    android:lineHeight="24dp"
+                    android:textAlignment="center"
+                    android:textColor="#7800FD"
+                    android:textColorHint="#7800FD"
+                    android:textSize="20dp"
+                    tools:ignore="Deprecated" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:id="@+id/LayouHamburgerMenu"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:onClick="onClick"
+                    android:id="@+id/imageHamburgerMenu"
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="3.74dp"
+                    android:layout_marginRight="3.74dp"
+                    android:background="@drawable/efect_bton_menu2"
+                    app:srcCompat="@drawable/hamburger_menu" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="409dp"
+            android:layout_height="256dp"
+            android:background="@drawable/plantillacorporativa"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LayouNameMenu"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="700"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:lineHeight="22dp"
+                    android:text="@string/textWelcome"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="0dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTheseAreOptionsForYou"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/textTheseAreOptionsForYou"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_burger"
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allButtonSendDocuments"
+            android:layout_width="355dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/btn_ingresar_pink"
+            android:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.041">
+
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/allDescription"
+                    android:background="@android:color/transparent"
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageAllDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/description" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@android:color/transparent"
+                    android:id="@+id/allTextSendDocuments"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textSendDocuments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/textSendDocuments"
+                        android:textAlignment="center"
+                        android:textColor="#FE1191"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/allButtonIntoPink"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="195dp"
+                    android:background="@drawable/btn_ingresar_pink"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonIntoPink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="800"
+                        android:background="@drawable/efect_bton_menu2"
+                        android:drawableRight="@drawable/arrow_right_alt_pink"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:onClick="onClick"
+                        android:text="@string/buttonIntoPink"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#FD098D"
+                        android:textSize="@dimen/small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allButtonViewDocuments"
+            android:layout_width="355dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/btn_ingresar_blue"
+            android:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.041">
+
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="@android:color/transparent"
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagePlagiarism"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/plagiarism" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@android:color/transparent"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texViewDocuments"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/texViewDocuments"
+                        android:textAlignment="center"
+                        android:textColor="#4500FF"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/allButtonIntoBlue"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="195dp"
+                    android:background="@drawable/btn_ingresar_blue"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonIntoBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="800"
+                        android:background="@drawable/efect_bton_menu2"
+                        android:drawableRight="@drawable/arrow_right_alt_blue"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/buttonIntoBlue"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#4500FF"
+                        android:textSize="@dimen/small"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allButtonOficces"
+            android:layout_width="355dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="255dp"
+            android:background="@drawable/btn_ingresar_green"
+            android:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.041">
+
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="@android:color/transparent"
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageLocationOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/location_on" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@android:color/transparent"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textOficces"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/textOficces"
+                        android:textAlignment="center"
+                        android:textColor="#05667C"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/allButtonIntoGreen"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="195dp"
+                    android:background="@drawable/btn_ingresar_green"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonIntoGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="800"
+                        android:background="@drawable/efect_bton_menu2"
+                        android:drawableRight="@drawable/arrow_right_alt_green"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/buttonIntoGreen"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#05667C"
+                        android:textSize="@dimen/small"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.LoginActivity">
+
+        <LinearLayout
+            android:id="@+id/LayoutLogo"
+            android:layout_width="264dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="52dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.039">
+
+            <ImageView
+                android:id="@+id/logoSophos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logotiposophos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutIngresarDatos"
+            android:layout_width="179dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginRight="65dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.057">
+
+            <TextView
+                android:id="@+id/textIngresarDatos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="14.63dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/textIngresarDatos"
+                android:textAlignment="center"
+                android:textColor="#7800FD"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LayoutEmail"
+            android:layout_width="347dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rectangulogrande"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.326">
+
+            <LinearLayout
+                android:id="@+id/LayoutIconoUser"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangulopeque_o"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iconoUser"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="12dp"
+                    app:srcCompat="@drawable/iconousuario" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/TextEmailAddress"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="400"
+                android:autofillHints="emailAddress"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="@string/HintEmail"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#7800FD"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutPassword1"
+            android:layout_width="347dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/rectangulogrande"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.326">
+
+            <LinearLayout
+                android:id="@+id/LayoutKey"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangulopeque_o"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iconoKey"
+                    android:layout_width="65dp"
+                    android:layout_height="55dp"
+                    app:srcCompat="@drawable/llave" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutPassword2"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:autofillHints="password"
+                    android:id="@+id/TextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="278dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_light"
+                    android:hint="@string/HintPassword"
+                    android:inputType="textPassword"
+                    android:textColorHint="#7800FD"
+                    android:textSize="20dp"
+                    app:startIconDrawable="@drawable/ojo"
+                    app:endIconMode="password_toggle"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                app:endIconMode="password_toggle"
+                app:srcCompat="@drawable/ojo" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LayoutBtnSingUp"
+            android:layout_width="347dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/rectangulogrande"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.326">
+
+
+            <Button
+                android:id="@+id/buttonSingUp"
+                android:layout_width="347dp"
+                android:layout_height="55dp"
+                android:layout_weight="700"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/ButtonIngresar"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:background="@drawable/efect_btn_ingresar1"
+                android:textAllCaps="false"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutBtnSingUp2"
+            android:layout_width="347dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/rectangulogrande"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.326">
+
+
+            <Button
+                android:id="@+id/buttonSingUp2"
+                android:layout_width="347dp"
+                android:layout_height="55dp"
+                android:layout_weight="700"
+                android:background="@drawable/efect_btn_ingresar_huella"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/fingerprint"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/ButtonIngresarConHuella"
+                android:textAllCaps="false"
+                android:textColor="#7800FD"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
